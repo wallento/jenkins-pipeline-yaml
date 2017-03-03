@@ -5,7 +5,8 @@ pipeline {
     stages {
        stage("Test") {
            steps {
-            echo 'Hello World'
+             def datas = readYaml file: '.librecores-ci.yaml'
+             echo 'Hello World'
            }
        }
     }
